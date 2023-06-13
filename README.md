@@ -9,6 +9,8 @@ Les morceaux à commenter et décommenter sont symbolisés par des commentaires 
 
 /////// A DECOMMENTER POUR TESTER L'EXERCICE 1 ///////
 
+Nous n'avons bundler que photobox.js
+
 Membres du binôme : 
     LOS Mélissandre
     MANGIN Raphaël
