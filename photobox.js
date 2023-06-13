@@ -4,18 +4,11 @@ import {loadPicture, loadResource} from "./lib/photoloader.js";
 import { displayCategorie, displayCommentaire, displayPicture } from "./lib/ui.js";
 
 async function btnCallBack(fct, uri="") {
-    let galerie;
-    if (fct === load) {
-        galerie = fct(uri);
-    }
-    else {
-        galerie = fct();
-    }
+    const galerie = fct(uri);
     await galerie;
     galerie.then(e => {
         display_galerie(e);
-        console.log("eeeeeeeeeeeeeeee")
-        const images = document.querySelectorAll("vignette");
+        const images = document.querySelectorAll(".vignette");
         console.log(images)
         images.forEach(element => {
             console.log(element)
