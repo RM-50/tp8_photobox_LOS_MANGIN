@@ -11,6 +11,8 @@ Les morceaux à commenter et décommenter sont symbolisés par des commentaires 
 
 Nous n'avons bundler que photobox.js
 
+Le TD a été réalisé sur un serveur apache local et non pas sur webetu (xampp)
+
 Membres du binôme : 
     LOS Mélissandre
     MANGIN Raphaël
