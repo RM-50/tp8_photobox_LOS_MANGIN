@@ -18,4 +18,3 @@ const getComments = function (picture) {
 }
 
 getPicture(105);
-
