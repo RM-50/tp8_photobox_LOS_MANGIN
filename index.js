@@ -1,13 +1,12 @@
 import {loadPicture, loadResource} from "./lib/photoloader.js";
 import { prefixeURI } from "./lib/config.js";
+import { displayCategorie, displayCommentaire, displayPicture } from "./lib/ui.js";
 
 const getPicture = function (id) {
     loadPicture(id).then(p => {
-        console.log(p.photo.titre);
-        console.log(p.photo.type);
-        console.log(p.photo.url.href);
-        getCategory(p).then(cat => console.log(cat));
-        getComments(p).then(com => console.log(com));
+        displayPicture(p.photo);
+        getCategory(p).then(cat => displayCategorie(cat.categorie));
+        getComments(p).then(com => displayCommentaire(com.comments));
     });
 }
 
