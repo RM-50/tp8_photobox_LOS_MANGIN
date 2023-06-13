@@ -1,5 +1,4 @@
 import {loadPicture, loadResource} from "./lib/photoloader.js";
-import { prefixeURI } from "./lib/config.js";
 import { displayCategorie, displayCommentaire, displayPicture } from "./lib/ui.js";
 
 const getPicture = function (id) {
@@ -18,5 +17,5 @@ const getComments = function (picture) {
     return loadResource(picture.links.comments.href);
 }
 
-// getPicture(105);
+getPicture(105);
 
