@@ -18,5 +18,4 @@ const getComments = function (picture) {
     return loadResource(picture.links.comments.href);
 }
 
-// getPicture(105);
 
